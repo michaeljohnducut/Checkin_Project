@@ -28,16 +28,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
+                        <a style="cursor: pointer" class="nav-link" data-toggle="modal"
+                            data-target="#modal_logout">Log-out</a>
                     </li>
                 </ul>
             </div>
@@ -69,106 +64,123 @@
         </div>
     </div>
     </div>
-
-
-
-    <!-- HOME OPTIONS -->
-    <section class="details_box" style="margin-top: 20px;">
-        <div id="div_body">
-            <div class="container">
-                <div class="row" style="margin-top: -100px!important;">
-                    <div class="col-md-12 text-center" style="margin-bottom: 50px!important;">
-                        <button style="margin-left: -50px;" type="button" class="darkblue-btn" data-target="#map_modal"
-                            data-toggle="modal">View Airport Map</button>
+    <div class="modal fade" id="modal_logout">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Confirm log-out?</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <h6>Are you sure you want to log-out from this account?</h6>
                     </div>
                 </div>
-                <div class="row container text-center">
-                    <div class="col-md-5 instruct_box" id="luggage_div">
-                        <div class="row col-md-12 inner_box" id="baggage_hidden" hidden>
-                            <div class="col-md-12">
-                                <h2>BAGGAGE</h2>
-                            </div>
-                            <div class="col-md-12">
-                                <p>Please check-in your baggage with adequate time.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 instruct_box" id="security_div">
-                        <div class="row col-md-12 inner_box" id="security_hidden" hidden>
-                            <div class="col-md-12">
-                                <h2>SECURITY</h2>
-                            </div>
-                            <div class="col-md-12">
-                                <p>Please pass through the security checkpoint at least
-                                    60 minutes prior to the departure time.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
+                <div class="modal-footer">
+                    <button class="darkblue-btn" id="btn_logoutYes">Yes</button>
+                    <button class="red-btn" data-dismiss="modal" id="btn_cancel">No</button>
                 </div>
-
-                <div class="row container text-center" style="margin-top: 50px!important;">
-                    <div class="col-md-5 instruct_box" id="gate_div">
-                        <div class="row col-md-12 inner_box" id="gate_hidden" hidden>
-                            <div class="col-md-12">
-                                <h2>BOARDING GATE</h2>
-                            </div>
-                            <div class="col-md-12">
-                                <p>Please come to the gate 30 minutes prior to the
-                                    departure time.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 instruct_box" id="depart_div">
-                        <div class="row col-md-12 inner_box" id="depart_hidden" hidden>
-                            <div class="col-md-12">
-                                <h2>DEPARTURE TIME</h2>
-                            </div>
-                            <div class="col-md-12">
-                                <p>The departure time is when the aircraft starts moving.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="row" style="padding-bottom: 30px; padding-top: 50px;">
-                    <div class="col-md-12 text-center">
-                        <button id="btn_backBooking" type="button" class="blue-btn">Back to my bookings</button>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </section>
-    <div class="footer-bottom">
-        &copy; BlueAirAssist.com | Designed by MJ Ducut
-    </div>
-
-    <!-- ---------------------------FOOTER END-------------------------------------- -->
 
 
-    <!-- SCRIPTS -->
-    <!-- BS JavaScript -->
-    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
-    <!-- Have fun using Bootstrap JS -->
-    <script type="text/javascript" src="Assets/JS/main.js"></script>
+        <!-- HOME OPTIONS -->
+        <section class="details_box" style="margin-top: 20px;">
+            <div id="div_body">
+                <div class="container">
+                    <div class="row" style="margin-top: -100px!important;">
+                        <div class="col-md-12 text-center" style="margin-bottom: 50px!important;">
+                            <button style="margin-left: -50px;" type="button" class="darkblue-btn"
+                                data-target="#map_modal" data-toggle="modal">View Airport Map</button>
+                        </div>
+                    </div>
+                    <div class="row container text-center">
+                        <div class="col-md-5 instruct_box" id="luggage_div">
+                            <div class="row col-md-12 inner_box" id="baggage_hidden" hidden>
+                                <div class="col-md-12">
+                                    <h2>BAGGAGE</h2>
+                                </div>
+                                <div class="col-md-12">
+                                    <p>Please check-in your baggage with adequate time.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 instruct_box" id="security_div">
+                            <div class="row col-md-12 inner_box" id="security_hidden" hidden>
+                                <div class="col-md-12">
+                                    <h2>SECURITY</h2>
+                                </div>
+                                <div class="col-md-12">
+                                    <p>Please pass through the security checkpoint at least
+                                        60 minutes prior to the departure time.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row container text-center" style="margin-top: 50px!important;">
+                        <div class="col-md-5 instruct_box" id="gate_div">
+                            <div class="row col-md-12 inner_box" id="gate_hidden" hidden>
+                                <div class="col-md-12">
+                                    <h2>BOARDING GATE</h2>
+                                </div>
+                                <div class="col-md-12">
+                                    <p>Please come to the gate 30 minutes prior to the
+                                        departure time.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 instruct_box" id="depart_div">
+                            <div class="row col-md-12 inner_box" id="depart_hidden" hidden>
+                                <div class="col-md-12">
+                                    <h2>DEPARTURE TIME</h2>
+                                </div>
+                                <div class="col-md-12">
+                                    <p>The departure time is when the aircraft starts moving.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row" style="padding-bottom: 30px; padding-top: 50px;">
+                        <div class="col-md-12 text-center">
+                            <button id="btn_backBooking" type="button" class="blue-btn">Back to my booking</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div class="footer-bottom">
+            &copy; BlueAirAssist.com | Designed by MJ Ducut
+        </div>
+
+        <!-- ---------------------------FOOTER END-------------------------------------- -->
+
+
+        <!-- SCRIPTS -->
+        <!-- BS JavaScript -->
+        <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        <!-- Have fun using Bootstrap JS -->
+        <script type="text/javascript" src="Assets/JS/main.js"></script>
 </body>
 
 </html>

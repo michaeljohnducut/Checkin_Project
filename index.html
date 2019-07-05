@@ -20,14 +20,14 @@
     <section id="header">
         <nav class="navbar navbar-light">
             <a class="navbar-brand" href="#"><img src="Assets/Images/blue air.png" id="header_logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
+                <span class="navbar-toggler-icon"></span>
                 <i class="fa fa-bars" style="color: #fff;"></i>
-            </button>
+            </button> -->
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+                <!-- <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -41,7 +41,7 @@
                         <a class="nav-link" href="#">Contact us</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </nav>
     </section>
 
@@ -147,7 +147,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <button type="submit" class=" blue-btn">Log-in </button>
+                                <button type="submit" class=" blue-btn" id="btn_login">Log-in </button>
                             </div>
                         </div>
                     </form>
@@ -215,12 +215,12 @@
                         <div class="row">
                             <div class="form-group col-md-12">
                                 <label for="exampleInputEmail1">Last Name:</label>
-                                <input type="email" class="form-control" placeholder="Enter last name" required>
+                                <input type="text" class="form-control" placeholder="Enter last name" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <button type="submit" class=" blue-btn">Proceed</button>
+                                <button type="submit" class=" blue-btn" id="btn_single_checkin">Proceed</button>
                             </div>
                         </div>
                     </form>
@@ -287,27 +287,19 @@
     <!-- CUSTROM SCRIPTS -->
     <script type="text/javascript">
 
-        // $(document).ready(function () {
-
-        //     //SMOOTH SCROLL=====================================================
-        //     $("#scroll_signup, #scroll_login").on('click', function (event) {
-
-        //         if (this.hash !== "") {
-        //             event.preventDefault();
-        //             var hash = this.hash;
-        //             $('html, body').animate({
-        //                 scrollTop: $(hash).offset().top
-        //             }, 800, function () {
-        //                 window.location.hash = hash;
-        //             });
-        //         }
-
-        //     });
-        // });
-
         $('#btn_signup').click(function (event) {
             event.preventDefault();
             window.location.replace('home.html');
+        });
+
+        $('#btn_login').click(function (event) {
+            event.preventDefault();
+            window.location.replace('home.html');
+        });
+
+        $('#btn_single_checkin').click(function (event) {
+            event.preventDefault();
+            window.location.replace('single_checkin.html');
         });
     </script>
 </body>

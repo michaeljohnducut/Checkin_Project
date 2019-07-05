@@ -154,3 +154,24 @@ $('#btn_bagRestrict').click(function () {
 $('#btn_backBooking').click(function () {
     window.location = 'all_bookings.html'
 });
+
+$('#btn_backBooking_single').click(function () {
+    window.location = 'single_checkin.html'
+});
+
+$('#btn_boardingPass_single').click(function () {
+    window.location = 'boarding_pass_single.html'
+});
+
+$('#btn_boardInstruct_single').click(function () {
+    window.location = 'boarding_instructions_single.html'
+});
+
+$('#btn_bagRestrict_single').click(function () {
+    window.location = 'bag_restrictions_single.html'
+});
+
+$('#btn_login').click(function () {
+    window.location = 'home.html'
+});
+
