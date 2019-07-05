@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boarding instructions | Blue Air Assistant</title>
+    <link rel="stylesheet" href="Assets/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Assets/loaders.css">
+
+</head>
+
+<body>
+    <!-- ---------------------------HEADER -------------------------------------- -->
+    <section id="home_header">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#"><img src="Assets/Images/blue air.png" id="header_logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" style="color: #fff;"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="container">
+            <div class="page_heading text-center">
+                <h1>Baggage Restrictions</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL POP-UPS -->
+    <div class="modal fade" id="map_modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Airport Map</h3>
+                </div>
+                <div class="modal-body">
+                    <img src="Assets/Images/airport_map.jpg" style="height:400px; margin-left: 30px!important;">
+                </div>
+                <div class="modal-footer">
+                    <button class="red-btn" data-dismiss="modal" id="btn_cancel">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- HOME OPTIONS -->
+    <section class="details_box" style="margin-top: 20px;">
+        <div id="div_body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 style="color: #9A2125;">RULES AND REGULATIONS:</h3>
+                        <ul style="margin-left: 20px; text-align: justify">
+                            <li>
+                                <h5>Maximum dimensions for ANY type of bag should not exceeed
+                                    90cm x 65cm x 35cm. (L x W x D). Refer to the images below.
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>Infants not paying for a seat, are not entitled to baggage allowance.
+                                    If passenger(s) have significant excess baggage, it is recommended to book a
+                                    'freight' seat at the child fare which provides the confirmed carriage of an extra
+                                    75kg of baggage.</h5>
+                            </li>
+                            <li>
+                                <h5>Excess baggage will only be carried, at the sole discretion of the captain of the
+                                    aircraft, if the payload of the aircraft and/or space permits and will be charged at
+                                    the prevailing rate for carriage of freight. </h5>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4 allowance_container text-center">
+                        <div class="allowance_box text-center">
+                            <h2>20KG</h2>
+                            <p style="margin-top: -10px;">BAGGAGE ALLOWANCE</p>
+                        </div>
+                        <p style="color: #9A2125;">Including hand luggage / cameras / laptops / etc.
+                            Check-in baggage should be soft-bags.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                </div>
+                <div class="row bag_pics_div text-center">
+                    <img src="Assets/Images/bag_restrict.jpg" style="margin-left: 50px">
+                </div>
+                <div class="col-md-12" style="margin-top: 40px;">
+                    <h3 style="color: #9A2125;">PROHIBITED ITEMS / EQUIPMENTS</h3>
+                    <h5>The following items are not allowed. </h5>
+                </div>
+                <div class="col-md-12 bag_pics_div">
+                    <img src="Assets/Images/prohibited_items.png">
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 30px; padding-top: 50px;">
+                <div class="col-md-12 text-center">
+                    <button id="btn_backBooking" type="button" class="blue-btn">Back to my bookings</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="footer-bottom">
+        &copy; BlueAirAssist.com | Designed by MJ Ducut
+    </div>
+
+    <!-- ---------------------------FOOTER END-------------------------------------- -->
+
+
+    <!-- SCRIPTS -->
+    <!-- BS JavaScript -->
+    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <!-- Have fun using Bootstrap JS -->
+    <script type="text/javascript" src="Assets/JS/main.js"></script>
+</body>
+
+</html>

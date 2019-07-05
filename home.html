@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | Blue Air Assistant</title>
+    <link rel="stylesheet" href="Assets/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Assets/loaders.css">
+
+</head>
+
+<body>
+    <!-- ---------------------------HEADER -------------------------------------- -->
+    <section id="home_header">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#"><img src="Assets/Images/blue air.png" id="header_logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" style="color: #fff;"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- MODAL POP-UPS -->
+    <div class="modal fade" id="modal_updateAccount">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Update account</h3>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="update_firstName">First Name:</label>
+                                <input type="text" class="form-control" placeholder="Hayley" id="update_firstName">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="update_lastName">Last Name:</label>
+                                <input type="text" class="form-control" placeholder="Williams" id="update_lastName">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label for="update_email">Email Address:</label>
+                                <input type="email" class="form-control" id="update_email"
+                                    placeholder="williams.hayley@paramore.com">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="update_address">Home Address:</label>
+                                <input type="text" class="form-control" id="update_address"
+                                    placeholder="1010c Ibarra St. Sampaloc, Manila PH">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="update_office">Company:</label>
+                                <input type="text" class="form-control" id="update_office" placeholder="DXC.Technology">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="update_phone">Phone Number:</label>
+                                <input type="number" class="form-control" id="update_phone"
+                                    placeholder="+63-9568341243">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="darkblue-btn" id="btn_signup">Update</button>
+                    <button class="red-btn" data-dismiss="modal" id="btn_cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="modal_logout">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Confirm log-out?</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <h6>Are you sure you want to log-out from this account?</h6>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="darkblue-btn" id="btn_logoutYes">Yes</button>
+                    <button class="red-btn" data-dismiss="modal" id="btn_cancel">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOME OPTIONS -->
+    <section>
+        <div class="container">
+            <div class="page_heading text-center">
+                <h1>Welcome, Hayley!</h1>
+                <!-- <p>This website was developed by BlueAir to easily assist passengers in terms of checking in,
+                    getting their boarding passes and providing other boarding instructions. Have a safe trip!</p> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="home_options">
+        <div id="div_body">
+            <div class="row">
+                <!-- PROFILE DIV -->
+                <div class="half_container col-md-5">
+                    <div class="div_title col-md-10">
+                        <h2><i class="fa fa-user"></i>User</h2>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="Assets/Images/hayley.jpg">
+                        </div>
+                        <div class="col-md-7 profile_email">
+                            <h2>Hayley Williams</h2>
+                            <p>williams.hayley@paramore.com</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ADDITIONAL DIV -->
+                <div class="col-md-5 half_container">
+                    <div class="div_title col-md-10">
+                        <h2><i class="fa fa-info-circle"></i>Additional Information:</h2>
+                    </div>
+                    <hr>
+                    <div class="row additional_info">
+                        <div class="col-md-10">
+                            <p><b>Home address:</b>&nbsp;1010c Ibarra St. Sampaloc, Manila PH
+                                <br><b>Company:</b>&nbsp;DXC.Technology
+                                <br><b>Phone Number:</b>&nbsp;+63-9568341243</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-11 full_container">
+                    <div class="col-md-12">
+                        <div class="div_title col-md-10">
+                            <h2><i class="fa fa-align-right"></i>Menu</h2>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row div_menu">
+                        <button type="button" class="menu_btn" id="btn_allBookings">
+                            <img src="Assets/Images/Airplane.png" class="menu_image">
+                            <p>All Bookings</p>
+                        </button>
+                        <button type="button" class="menu_btn" id="btn_bagRestict">
+                            <img src="Assets/Images/bag.png" class="menu_image" style="margin-left: 5px!important;">
+                            <p>Baggage Restrictions</p>
+                        </button>
+                        <button type="button" class="menu_btn" data-target="#modal_updateAccount" data-toggle="modal">
+                            <img src="Assets/Images/User.png" class="menu_image">
+                            <p>Update Profile</p>
+                        </button>
+                        <button type="button" class="menu_btn" data-target="#modal_logout" data-toggle="modal">
+                            <img src="Assets/Images/Logout.png" class="menu_image">
+                            <p>Log-out</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="footer-bottom">
+        &copy; BlueAirAssist.com | Designed by MJ Ducut
+    </div>
+
+    <!-- ---------------------------FOOTER END-------------------------------------- -->
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Assets/JS/main.js"></script>
+    
+
+
+</body>
+
+</html>

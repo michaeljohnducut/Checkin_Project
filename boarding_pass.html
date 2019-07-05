@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boarding Pass | Blue Air Assistant</title>
+    <link rel="stylesheet" href="Assets/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Assets/loaders.css">
+
+</head>
+
+<body>
+    <!-- ---------------------------HEADER -------------------------------------- -->
+    <section id="home_header">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#"><img src="Assets/Images/blue air.png" id="header_logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" style="color: #fff;"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="container">
+            <div class="page_heading text-center">
+                <h1>Your boarding pass</h1>
+                <!-- <p>This website was developed by BlueAir to easily assist passengers in terms of checking in,
+                            getting their boarding passes and providing other boarding instructions. Have a safe trip!</p> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL POP-UPS -->
+    <div class="modal fade" id="modal_downloaded" style="margin-top: 100px!important;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Success!</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row" style="padding: 30px!important;">
+                        <p>You're boarding pass has been downloaded successfully!.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="red-btn" data-dismiss="modal" id="btn_cancel">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- HOME OPTIONS -->
+    <section id="home_options">
+        <div id="div_body">
+            <div class="row">
+                <div class="full_container col-md-11">
+                    <div class="col-md-11 pass_container">
+                        <div class="div_boardingPass">
+                            <div class="row pass_top">
+                                <div class="col-md-3">
+                                    <img src="Assets/Images/plane_front_gray.png">
+                                </div>
+                                <div class="col-md-5 text-center"
+                                    style="padding-bottom: 0!important; padding-top: 60px; border-right: 2px dashed lightgray">
+                                    <h3 style=" font-family: 'Times New Roman', Times, serif; color: lightgray">BOARDING
+                                        PASS</h3>
+                                </div>
+                                <div class="col-md-4 text-center"
+                                    style="padding-bottom: 0!important; padding-top: 60px">
+                                    <h3 style=" font-family: 'Times New Roman', Times, serif; color: lightgray">BOARDING
+                                        PASS</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 pass_details">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p>PASSENGER:</p>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <span class="info_details">WILLIAMS / HAYLEY</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p>FROM:</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <span class="info_details">MANILA</span>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <p>FLIGHT:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <span class="info_details">PR023</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p>TO:</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <span class="info_details">HOUSTON</span>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <p>DATE:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <span class="info_details">20JUL19</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p>GATE:</p>
+                                            <p class="info_details" style="margin-top: -20px; font-size: 30px;">06</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p>BOARDING TIME:</p>
+                                            <p class="info_details" style="margin-top: -20px;font-size: 30px;">17:05</p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p>SEAT:</p>
+                                            <p class="info_details" style="margin-top: -20px;font-size: 30px;">23E</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>Boarding gate closes <span style="color: red">10 minutes</span> prior to
+                                                departure time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2"
+                                    style="border-right: 2px dashed lightgray; margin-top: 0!important;">
+                                    <div class="row pass_details">
+                                        <img src="Assets/Images/blue air.png" class="pass_logo">
+                                    </div>
+
+                                    <div class="row">
+                                        <img src="Assets/Images/QR_pass.png" class="qr_logo">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pass_details">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p>PASSENGER:</p>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p><b>WILLIAMS / HAYLEY</b></p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p>FROM:</p>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p><b>MANILA</b></p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p>TO:</p>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p><b>HOUSTON</b></p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p>FLIGHT:</p>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p><b>PR023</b></p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p>DATE:</p>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p><b>20JUL19</b></p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p>GATE:</p>
+                                            <p class="info_details" style="margin-top: -20px; font-size: 20px;">06</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p>TIME:</p>
+                                            <p class="info_details" style="margin-top: -20px;font-size: 20px;">17:05</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p>SEAT:</p>
+                                            <p class="info_details" style="margin-top: -20px;font-size: 20px;">23E</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-bottom: 30px; padding-top: 50px;">
+                            <div class="col-md-6 text-center">
+                                <button id="btn_savePass" type="button" class="darkblue-btn"
+                                    data-target="#modal_downloaded" data-toggle="modal">Download boarding pass</button>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <button id="btn_backBooking" type="button" class="blue-btn">Back to my bookings</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-bottom">
+        &copy; BlueAirAssist.com | Designed by MJ Ducut
+    </div>
+
+    <!-- ---------------------------FOOTER END-------------------------------------- -->
+
+
+    <!-- SCRIPTS -->
+    <!-- BS JavaScript -->
+    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <!-- Have fun using Bootstrap JS -->
+    <script type="text/javascript" src="Assets/JS/main.js"></script>
+</body>
+
+</html>

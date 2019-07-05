@@ -1,0 +1,678 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+* { 
+    margin: 0;
+    padding: 0; 
+}
+
+
+#header { 
+    background-image: url(Images/HeaderImage.png);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-nav li a { 
+    float: right; 
+    color:#fff!important; 
+}
+
+.navbar-brand img {
+    width: 150px; 
+    margin-left: 30px;
+}
+
+.navbar-toggler { 
+    border: none!important; 
+    outline: none!important;
+}
+
+nav .navbar-toggler-icon { 
+    color: #fff!important; 
+    font-size: 26px;
+}
+
+/* WELCOME TEXT */
+
+.welcome { 
+    padding: 50px 100px;
+    margin-top: -140px; 
+    background-color: #fff; 
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2); 
+}
+
+.welcome h1 { 
+    color: #555;
+}
+
+.welcome .home-btn { 
+    float: right;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 10px 30px; 
+    width: 250px;
+    color: #fff; 
+    background-color: #013f7e; 
+    box-shadow: 5px 8px 8px rgba(33, 64, 154, 0.3)
+}
+
+.welcome .login-btn {
+    float: left; 
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 10px 30px; 
+    width: 250px;
+    color: #fff; 
+    background-color: #218A9A; 
+    box-shadow: 5px 8px 8px rgba(33, 138, 154, 0.3)
+}
+
+.welcome .btn:hover { 
+    box-shadow: none;
+    color: #fff;
+}
+
+/* SIGNUP */
+ .blue-btn {
+    border: none;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 10px 30px; 
+    width: 250px;
+    color: #fff; 
+    background-color: #218A9A; 
+    box-shadow: 5px 8px 8px rgba(33, 138, 154, 0.3);
+    transition: .3s;
+}
+
+.darkblue-btn { 
+    border: none;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 10px 30px; 
+    width: 250px;
+    color: #fff; 
+    background-color: #013f7e; 
+    box-shadow: 5px 8px 8px rgba(33, 64, 154, 0.3);
+    transition: .3s;
+}
+
+.red-btn {
+    border: none;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 10px 30px; 
+    width: 250px;
+    color: #fff; 
+    background-color:#9A2125;
+    box-shadow: 5px 8px 8px rgba(154, 33, 37, 0.3);
+    transition: .3;
+}
+
+.red-btn:hover {
+   box-shadow: none;    
+   transform: scale(1.1);
+}
+
+.darkblue-btn:hover { 
+    box-shadow: none;
+    color: #fff;
+    transform: scale(1.1);
+    
+}
+
+.blue-btn:hover { 
+    box-shadow: none;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+#signup {
+    padding-top: 100px; 
+    padding-bottom: 100px;
+}
+
+#login {
+    padding-bottom: 100px;
+}
+
+
+/* SINGLE CHECKIN SECTION */
+#single_checkin { 
+    background-color: #013f7e; 
+    height: 20vh;
+    padding-bottom: 100px;
+}
+
+#single_checkin h2{
+    color: #fff;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#single_checkin p {
+    color: #fff;
+    margin-top: -10px;
+}
+
+#btn_single { 
+    background-color: #013f7e; 
+    border: 2px solid #fff; 
+    color: #fff;
+    width: 100px;
+    height: 30px;
+}
+
+#btn_single:hover { 
+    width: 110px;
+    height: 40px;
+    background-color: #218A9A; 
+}
+
+/* SERVICES */
+#services { 
+    background: #efefef;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#services .col-md-4{ 
+    padding: 20px;
+}
+
+#services .col-md-4 h4{ 
+    padding: 5px;
+}
+
+#services .col-md-4 img{ 
+    width: 50px;
+}
+
+#services .col-md-4 p{ 
+    padding: 5px;
+    text-align: justify;
+}
+
+/* FEATURES  */
+#features { 
+    padding-top: 100px;
+    padding-bottom: 100px; 
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/hero_airport.jpg);
+    height: 80vh;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    color:#fff;
+
+}
+
+#features .col-md-6 { 
+    padding: 20px; 
+}
+
+#features .col-md-6 h1 { 
+    color: #fff;
+}
+
+#features .col-md-6:first-child h1 { 
+    color: #218A9A; 
+}
+
+#features .col-md-6:last-child { 
+    padding-left: 100px; 
+}
+
+#features .col-md-6:last-child .feature-box{ 
+    padding-bottom: 10px; 
+}
+
+#features .col-md-6:last-child p { 
+    margin-top: -10px;
+}
+
+#features .col-md-6:last-child i { 
+    font-size: 30px;
+}
+
+.footer{
+    background: #013f7e;
+    height: 30vh;
+}
+
+.footer-bottom { 
+    background-color: #101F4E; 
+    color: #ADAFB4;
+    height: 50px; 
+    width: 100%; 
+    text-align: center; 
+    bottom: 0px;
+    left: 0px;
+    padding-top: 10px;
+
+}
+
+/* HOME.HTML SPECIFIC */
+
+
+#home_header { 
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/HeaderImage.png);
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#div_body { 
+    /* height: 100%; */
+    /* box-shadow: 5px 5px 10px 2px rgba(231, 234, 240, 1); */
+    margin: 40px;
+    padding: 30px 50px 50px 50px;
+    background-color: #F5F6F8;
+}
+
+#home_options h2 { 
+    margin: 10px;
+    background-color: #fff;
+}
+
+.half_container{ 
+    box-shadow: 5px 5px 10px 2px rgba(231, 234, 240, 1);
+    background-color:#fff;
+    border-left: 5px #218A9A solid;
+    margin: 30px 60px 50px 50px;
+    color: #555;
+}
+
+#home_options img{
+    height: 100px;
+    border-radius: 50px;
+    margin-left: 50px;
+}
+
+/* #home_options img:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+} */
+
+.profile_email { 
+    margin-left: 20px;
+    color: #555;
+}
+
+.profile_email p { 
+    margin-left: 15px;
+    margin-top: -10px;
+    color: #555;
+}
+
+.additional_info { 
+    margin: 20px;
+}
+
+.additional_info h2, .div_title h2 { 
+    color: #218A9A;
+}
+
+.additional_info b{ 
+    margin-left: 30px;
+    color: #013f7e;
+}
+
+h2 i { 
+    padding-right: 5px;
+}
+
+.full_container{ 
+    box-shadow: 5px 5px 10px 2px rgba(231, 234, 240, 1);
+    background-color:#fff;
+    margin-left: 50px;
+    margin-right: 200px;
+    color: #555;
+    padding: 20px;
+    border-left: 5px #013f7e solid;
+}
+
+.menu_image { 
+    margin: 20px 20px 20px 35px!important;
+    padding-bottom: 0!important;
+}
+
+
+.menu_btn { 
+    background-color: #F5F6F8;
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px 50px 20px 60px;
+    box-shadow: 5px 5px 10px 2px rgba(231, 234, 240, 1);
+    border: none;
+    transition: 0.5s;
+}
+
+.menu_btn:hover { 
+    cursor: pointer;
+    box-shadow: -5px -5px 10px 2px rgba(231, 234, 240, 1);
+    transform: scale(1.1);
+}
+
+.menu_btn p{ 
+    text-align: center;
+    color: #515C6F;
+    margin-top: -20px;
+}
+
+.modal-footer button{
+    width:150px;
+}
+
+
+/* ALL BOOKINGS SPECIFIC */
+
+.flight_banner {
+    height: 15vh;
+    background-color: #F5F6F8;
+    box-shadow: 5px 5px 10px 2px rgba(231, 234, 240, 1), -5px -5px 10px 2px rgba(231, 234, 240, 1);
+    margin-left: 75px;
+    border-radius: 10px;
+    margin-top: -20px;
+    transition: 0.5s;
+    
+}
+
+.flight_banner:hover { 
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.flight_banner_img { 
+    margin-left: -10px!important;
+    height: 50%!important;
+}
+
+.flight_head_active {
+    height: 5vh;
+    padding-bottom: 0; 
+    padding-top: 5px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: #013f7e;
+    box-shadow: 5px 8px 8px rgba(33, 64, 154, 0.3);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.flight_banner .row div { 
+    margin-top: 30px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.flight_banner .row div h4 { 
+    padding-bottom: 0;
+    margin-top: -20px;
+}
+
+.allowed_checkin { 
+    color: #515C6F;
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+
+.flight_banner .row div p:last-child{ 
+    margin-top: -10px;
+}
+
+#flight_container { 
+    background-color: #F5F6F8;
+    height: 50vh;
+    margin-bottom: 30px;
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+
+.flight_head_inactive { 
+    height: 5vh;
+    padding-bottom: 0; 
+    padding-top: 5px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color:#9A2125;
+    box-shadow: 5px 8px 8px rgba(154, 33, 37, 0.3);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.flight_info_box { 
+    background-color:  #F5F6F8;
+    padding: 20px!important;
+    margin: 20px!important;
+    border-radius: 10px;
+}
+
+.flight_info_box h5{
+    margin-top: -15px;
+}
+
+.top_border {
+    border-top: 1px solid #ADAFB4;
+}
+
+.summary_box {
+    text-align: center!important; 
+    margin-top: 10px;
+    /* border-bottom: 1px solid #ADAFB4; */
+}
+
+.summary_box h4 {
+    margin-top: -20px!important;
+}
+
+.summary_box p:last-child {
+    margin-top: -10px;
+}
+
+.summary_box_img { 
+    margin-left: -10px!important;
+    height: 50%!important; 
+}
+
+.seat_box { 
+    margin: 20px 60px 20px 60px!important;
+    border: 1px solid  #ADAFB4;
+    padding: 20px;
+}
+
+.pass_container { 
+    padding: 50px 50px 50px 150px!important;
+}
+
+.div_boardingPass {
+    box-shadow: 5px 5px 10px 2px rgba(231, 234, 240, 1), -5px -5px 10px 2px rgba(231, 234, 240, 1);
+    padding-bottom: 10px;
+    padding-left: 13px;
+    padding-right: 15px;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.pass_top {
+    background-color: #013f7e   ; 
+    border-radius: 50px 50px 0 0;
+}
+
+.pass_details { 
+    margin-top: 15px;
+}
+
+.info_details {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pass_details p {
+    margin-top: 3px;
+}
+
+.pass_logo {
+    height: 50px!important;
+    margin-left: -30px!important;
+}
+
+.qr_logo {
+    border-radius: 0!important;
+    height: 150px!important;
+    margin-left: -10px!important;
+    margin-top: 6   0px;
+}
+
+.page_heading {
+    padding: 20px 100px;
+    margin-top: -50px; 
+    color: #fff; 
+    background-color: #218A9A; 
+}
+
+.title_box {
+    padding: 0px 100px 0px 100px;
+    z-index: -1;
+    margin-left: 20px!important;
+    margin-right: 30px!important;
+}
+
+.title_container { 
+    background-color: #218A9A; 
+    padding: 5px 50px 0px 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title_container p { 
+    margin-top: 10px;
+}
+
+.details_box {
+    /* height: 20vh; */
+    background-color: #F5F6F8;
+    box-shadow: 5px 5px 10px 2px rgba(231, 234, 240, 1);
+    margin-top: -30px;
+    margin-left: 20px!important;
+    margin-right: 30px!important;
+    padding-top: 50px;
+}
+
+.details_box img {
+    border-radius: 0px!important;
+    height: 300px!important;
+}
+
+#luggage_div { 
+    background: url(images/luggage.jpg);
+    height: 50vh;
+    background-size: cover; 
+    background-position: center;
+    color:#fff;
+}    
+
+#security_div { 
+    background: url(images/air_security.jpg);
+    height: 50vh;
+    background-size: cover; 
+    background-position: center;
+    color:#fff;
+}   
+
+#gate_div { 
+    background: url(images/gate.jpg);
+    height: 50vh;
+    background-size: cover; 
+    background-position: center;
+    color:#fff;
+} 
+
+#gate_div:hover { 
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/gate.jpg);
+    height: 50vh;
+    background-size: cover; 
+    background-position: center;
+    color:#fff;
+} 
+
+#depart_div { 
+    background: url(images/depart.jpg);
+    height: 50vh;
+    background-size: cover; 
+    background-position: center;
+    color:#fff;
+} 
+
+#depart_div:hover { 
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/depart.jpg);
+    height: 50vh;
+    background-size: cover; 
+    background-position: center;
+    color:#fff;
+} 
+
+#luggage_div:hover { 
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/luggage.jpg);
+    height: 50vh;
+    background-size: cover; 
+    background-position: center;
+    color:#fff;
+}    
+
+#security_div:hover { 
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/air_security.jpg);
+    height: 50vh;
+    background-size: cover; 
+    background-position: center;
+    color:#fff;
+}  
+
+.instruct_box {
+    margin: 10px 40px;
+    padding: 40px 40px 40px 50px!important;
+}
+
+.details_box #div_body {
+    margin-left: 150px;
+}
+
+.inner_box {
+    border: 5px solid white;
+    margin-top: 100px;
+}
+
+.bag_pics_div { 
+    /* margin: 30px 0px;  */
+    background-color: white;
+    padding: 0px 50px 0px 80px;
+}
+
+.allowance_box { 
+    border: 1px solid gray;
+    padding: 5px 10px
+}
+
+.allowance_container { 
+    padding:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

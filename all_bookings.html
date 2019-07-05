@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>All Bookings | Blue Air Assistant</title>
+    <link rel="stylesheet" href="Assets/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Assets/loaders.css">
+
+</head>
+
+<body>
+    <!-- ---------------------------HEADER -------------------------------------- -->
+    <section id="home_header">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#"><img src="Assets/Images/blue air.png" id="header_logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" style="color: #fff;"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="page_heading text-center">
+                <h1>Check-in here!</h1>
+                <!-- <p>This website was developed by BlueAir to easily assist passengers in terms of checking in,
+                        getting their boarding passes and providing other boarding instructions. Have a safe trip!</p> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL POP-UPS -->
+    <div class="modal fade" id="modal_confirmCheckin" style="margin-top: 100px!important;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Check-in now?</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row" style="padding: 30px!important;">
+                        <p>Are you sure you want to check-in for this flight?<br>This cannot be undone.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="darkblue-btn" id="btn_confirm_check">Check-in</button>
+                    <button class="red-btn" data-dismiss="modal" id="btn_cancel">Not yet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- HOME OPTIONS -->
+    <section id="home_options">
+        <div id="div_body">
+            <div class="row">
+                <!-- PROFILE DIV -->
+                <div class="half_container col-md-5">
+                    <div class="div_title col-md-10">
+                        <h2><i class="fa fa-plane"></i>All Bookings</h2>
+                    </div>
+                    <hr>
+                    <div class="col-md-12" id="flight_container">
+                        <div class="row">
+                            <p class="allowed_checkin">CHECK-IN ALLOWED. CHECK-IN ALLOWED</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 flight_head_active" id="flight_1_head">
+                                <p><b>JULY 20, 2019 - THU</b></p>
+                            </div>
+                            <div class="col-md-8 flight_banner" id="flight_1">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <p>DEPARTS</p>
+                                        <h4>MNL</h4>
+                                        <p>05:30AM</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="flight_banner_img" src="Assets/Images/plane-hor.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>ARRIVES</p>
+                                        <h4>HOU</h4>
+                                        <p>07:40PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="allowed_checkin">FUTURE FLIGHTS (CHECK-IN NOT ALLOWED)</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 flight_head_inactive">
+                                <p><b>JUNE 28, 2019 - FRI</b></p>
+                            </div>
+                            <div class="col-md-8 flight_banner" id="flight_2">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <p>DEPARTS</p>
+                                        <h4>HOU</h4>
+                                        <p>06:45PM</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="flight_banner_img" src="Assets/Images/plane-hor.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>ARRIVES</p>
+                                        <h4>LAX</h4>
+                                        <p>3:40AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5 flight_head_inactive">
+                                <p><b>JULY 30, 2019 - WED</b></p>
+                            </div>
+                            <div class="col-md-8 flight_banner" id="flight_3">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <p>DEPARTS</p>
+                                        <h4>LAX</h4>
+                                        <p>05:30PM</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="flight_banner_img" src="Assets/Images/plane-hor.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>ARRIVES</p>
+                                        <h4>MIL</h4>
+                                        <p>07:40PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 flight_head_inactive">
+                                <p><b>SEPT 11, 2019 - MON</b></p>
+                            </div>
+                            <div class="col-md-8 flight_banner" id="flight_4">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <p>DEPARTS</p>
+                                        <h4>MIL</h4>
+                                        <p>05:30AM</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="flight_banner_img" src="Assets/Images/plane-hor.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>ARRIVES</p>
+                                        <h4>HOU</h4>
+                                        <p>07:40PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FLIGHT INFO DIV -->
+                <div class="col-md-5 half_container">
+                    <div class="row" id="flight_info_div">
+                        <div class="div_title col-md-10">
+                            <h2><i class="fa fa-info-circle"></i>Flight Information:</h2>
+                        </div>
+                        <div class="row flight_info_box">
+                            <div class="col-md-6" style="margin-top: 5px;">
+                                <p>PASSENGER</p>
+                                <h5 id="info_passenger">&nbsp;</h5>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <p>TICKET #:</p>
+                                <h5 id="info_ticket">&nbsp;</h5>
+                            </div>
+                            <div class="col-md-6 top_border" style="padding-top: 10px;">
+                                <p id="info_date">&nbsp;</p>
+                            </div>
+                            <div class="col-md-6 text-right top_border" style="padding-top: 10px;">
+                                <p id="info_destination">&nbsp;</p>
+                            </div>
+                            <div class="col-md-12 top_border">
+                                <div class="row summary_box">
+                                    <div class="col-md-4 text-center">
+                                        <p>DEPARTS</p>
+                                        <h4 id="info_depart_code">&nbsp;</h4>
+                                        <p id="info_depart_time">&nbsp;</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="summary_box_img" src="Assets/Images/plane-hor.png">
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <p>ARRIVES</p>
+                                        <h4 id="info_arrive_code">&nbsp;</h4>
+                                        <p id="info_arrive_time">&nbsp;</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 top_border" style="margin-top: -70px;">
+                                <p>FLIGHT</p>
+                                <h5 id="info_flight">&nbsp;</h5>
+                            </div>
+                            <div class="col-md-6 text-right top_border  " style="margin-top: -70px;">
+                                <p>TRAVEL TIME:</p>
+                                <h5 id="info_travel_time">&nbsp;</h5>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button class="darkblue-btn" id="btn_checkin" data-toggle="modal"
+                                    data-target="#modal_confirmCheckin" hidden>Check-in</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CONFIRMED CHECKIN DIV -->
+                    <div class="row" id="confirmed_check_div" hidden>
+                        <div class="div_title col-md-10">
+                            <h2><i class="fa fa-check"></i>You're checked in!</h2>
+                            <hr>
+                        </div>
+                        <div class="row flight_info_box">
+                            <div class="col-md-4">
+                                <p>FLIGHT</p>
+                                <h5>PR023</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <p>DEPARTS</p>
+                                <h5>05:30AM</h5>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <p>GATE</p>
+                                <h5 id="info_ticket">06</h5>
+                            </div>
+                            <div class="col-md-12 top_border" style="padding-top: 10px;">
+                                <p>PASSENGER</p>
+                                <h5>WILLIAMS / HAYLEY</h5>
+                            </div>
+                            <div class="col-md-12 top_border" style="padding-top: 10px;">
+                                <p>BAGGAGE ALLOWANCE</p>
+                                <h5>20 kilos</h5>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row seat_box">
+                                    <div class="col-md-3">
+                                        <p>GROUP:</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h3 style="margin-top: -3px; margin-left: -5px;">E</h3>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>SEAT:</p>
+                                    </div>
+                                    <div class="col-md-3" style="margin-top: -3px; margin-left: -5px;">
+                                        <h3>23E</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <button class="darkblue-btn" id="btn_boardingPass">View Boarding Pass</button>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button class="blue-btn" id="btn_boardInstruct">View Boarding
+                                        Instructions</button>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button class="red-btn" id="btn_bagRestrict">View Baggage
+                                        Restrictions</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="footer-bottom">
+        &copy; BlueAirAssist.com | Designed by MJ Ducut
+    </div>
+
+    <!-- ---------------------------FOOTER END-------------------------------------- -->
+
+
+    <!-- SCRIPTS -->
+    <!-- BS JavaScript -->
+    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <!-- Have fun using Bootstrap JS -->
+    <script type="text/javascript" src="Assets/JS/main.js"></script>
+</body>
+
+</html>

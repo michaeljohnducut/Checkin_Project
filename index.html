@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blue Air Assistant</title>
+    <link rel="stylesheet" href="Assets/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Assets/loaders.css">
+
+</head>
+
+<body>
+    <!-- ---------------------------HEADER -------------------------------------- -->
+    <section id="header">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#"><img src="Assets/Images/blue air.png" id="header_logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa fa-bars" style="color: #fff;"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- ---------------------------HEADER END -------------------------------------- -->
+
+    <!-- ---------------------------WELCOME TEXT -------------------------------------- -->
+
+    <section id="welcome">
+        <div class="container">
+            <div class="welcome text-center">
+                <h1>Aiport Assistant</h1>
+                <p>This website was developed by BlueAir to easily assist passengers in terms of checking in,
+                    getting their boarding passes and providing other boarding instructions. Have a safe trip!</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#signup"><button type="submit" class="btn home-btn"
+                                id="scroll_signup">Sign-up</button></a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#login"><button type="submit" class="btn login-btn"
+                                id="scroll_login">Log-in</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------WELCOME TEXT END -------------------------------------- -->
+
+
+    <!-- ---------------------------SIGNUP-------------------------------------- -->
+
+    <section id="signup">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="Assets/Images/line.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <h1>Sign-up</h1>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label for="exampleInputEmail1">Email:</label>
+                                <input type="email" class="form-control" placeholder="Enter email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="exampleInputEmail1">First Name:</label>
+                                <input type="text" class="form-control" placeholder="Enter first name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="exampleInputEmail1">Last Name:</label>
+                                <input type="text" class="form-control" placeholder="Enter last name" required >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="exampleInputPassword1">Password:</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required
+                                    placeholder="Password" >
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="exampleInputPassword1">Confirm Password:</label>
+                                <input type="password" class="form-control" id="exampleInputPassword2" required
+                                    placeholder="Password" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button class="darkblue-btn" id="btn_signup">Signup</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------------SIGNUP END-------------------------------------- -->
+
+
+    <!-- ---------------------------LOGIN-------------------------------------- -->
+
+    <section id="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <h1>Already have an account?</h1>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label for="exampleInputEmail1">Email:</label>
+                                <input type="email" class="form-control" placeholder="Enter email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label for="exampleInputPassword1">Password:</label>
+                                <input type="password" class="form-control" id="exampleInputPassword3"
+                                    placeholder="Password" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class=" blue-btn">Log-in </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="Assets/Images/boarding_gates.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------------LOGIN END-------------------------------------- -->
+
+
+    <!-- ---------------------------SERVICES-------------------------------------- -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Assets/Images/checkin.png">
+                    <h4>Easy Check-in</h4>
+                    <p>Our service provides easy check-in for passengers without having to experience the long queue.
+                        Once you create your account, we list all your bookings associated with the email address you
+                        used.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="Assets/Images/QR.png">
+                    <h4>Electronic Boarding Pass</h4>
+                    <p>Once you're checked in, you can download your boarding pass and have it available at your
+                        disposal.
+                        You can present it through your smart phone or have it printed. It's fast. It's easy.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="Assets/Images/security.png">
+                    <h4>Step-by-Step Instructions</h4>
+                    <p>First time on a plane? No worries! This website has everything you need to know from you're
+                        flight
+                        details and security checks, up to the moment you board the plane!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------------SERVICES END-------------------------------------- -->
+
+    <!-- ---------------------------FEATURES-------------------------------------- -->
+
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>No time to create an account?</h1>
+                    <p>You can use our single check-in feature.</p>
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label for="exampleInputEmail1">Ticket #:</label>
+                                <input type="text" class="form-control" placeholder="Enter ticket #" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label for="exampleInputEmail1">Last Name:</label>
+                                <input type="email" class="form-control" placeholder="Enter last name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class=" blue-btn">Proceed</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-box">
+                        <div class="feature-left">
+                            <i class="fa fa-suitcase"></i>
+                        </div>
+                        <div class="feature-right">
+                            <h1>Baggage Check</h1>
+                            <p>with security.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-left">
+                            <i class="fa fa-qrcode"></i>
+                        </div>
+                        <div class="feature-right">
+                            <h1>Proceed to gate</h1>
+                            <p>with your boarding pass.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-left">
+                            <i class="fa fa-plane"></i>
+                        </div>
+                        <div class="feature-right">
+                            <h1>Board plane</h1>
+                            <p>and have a safe flight!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------------FEATURES END-------------------------------------- -->
+
+    <!-- ---------------------------FOOTER-------------------------------------- -->
+    
+    <div class="footer-bottom">
+        &copy; BlueAirAssist.com | Designed by MJ Ducut
+    </div>
+
+    <!-- ---------------------------FOOTER END-------------------------------------- -->
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Assets/jquery-3.4.1.min.js"></script>
+
+    <!-- CUSTROM SCRIPTS -->
+    <script type="text/javascript">
+
+        // $(document).ready(function () {
+
+        //     //SMOOTH SCROLL=====================================================
+        //     $("#scroll_signup, #scroll_login").on('click', function (event) {
+
+        //         if (this.hash !== "") {
+        //             event.preventDefault();
+        //             var hash = this.hash;
+        //             $('html, body').animate({
+        //                 scrollTop: $(hash).offset().top
+        //             }, 800, function () {
+        //                 window.location.hash = hash;
+        //             });
+        //         }
+
+        //     });
+        // });
+
+        $('#btn_signup').click(function (event) {
+            event.preventDefault();
+            window.location.replace('home.html');
+        });
+    </script>
+</body>
+
+</html>
