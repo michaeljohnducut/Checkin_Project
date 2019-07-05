@@ -26,24 +26,22 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a style="cursor: pointer" class="nav-link" data-toggle="modal"
-                                data-target="#modal_logout">Log-out</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a style="cursor: pointer" class="nav-link" data-toggle="modal"
+                            data-target="#modal_logout">Log-out</a>
+                    </li>
+                </ul>
+
+
             </div>
         </nav>
     </section>
     <section>
         <div class="container">
             <div class="page_heading text-center">
-                <h1>Baggage Restrictions</h1>
+                <h1>Some boarding reminders</h1>
+                <p>Hover on each image.</p>
             </div>
         </div>
     </section>
@@ -63,7 +61,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="modal fade" id="modal_logout">
@@ -91,62 +88,71 @@
     <section class="details_box" style="margin-top: 20px;">
         <div id="div_body">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 style="color: #9A2125;">RULES AND REGULATIONS:</h3>
-                        <ul style="margin-left: 20px; text-align: justify">
-                            <li>
-                                <h5>Maximum dimensions for ANY type of bag should not exceeed
-                                    90cm x 65cm x 35cm. (L x W x D). Refer to the images below.
-                                </h5>
-                            </li>
-                            <li>
-                                <h5>Infants not paying for a seat, are not entitled to baggage allowance.
-                                    If passenger(s) have significant excess baggage, it is recommended to book a
-                                    'freight' seat at the child fare which provides the confirmed carriage of an extra
-                                    75kg of baggage.</h5>
-                            </li>
-                            <li>
-                                <h5>Excess baggage will only be carried, at the sole discretion of the captain of the
-                                    aircraft, if the payload of the aircraft and/or space permits and will be charged at
-                                    the prevailing rate for carriage of freight. </h5>
-                            </li>
-                        </ul>
+                <div class="row" style="margin-top: -100px!important;">
+                    <div class="col-md-12 text-center" style="margin-bottom: 50px!important;">
+                        <button style="margin-left: -50px;" type="button" class="darkblue-btn" data-target="#map_modal"
+                            data-toggle="modal">View Airport Map</button>
                     </div>
-
-                    <div class="col-md-4">
-
-                    </div>
-                    <div class="col-md-4 allowance_container text-center">
-                        <div class="allowance_box text-center">
-                            <h2>20KG</h2>
-                            <p style="margin-top: -10px;">BAGGAGE ALLOWANCE</p>
+                </div>
+                <div class="row container text-center">
+                    <div class="col-md-5 instruct_box" id="luggage_div">
+                        <div class="row col-md-12 inner_box" id="baggage_hidden" hidden>
+                            <div class="col-md-12">
+                                <h2>BAGGAGE</h2>
+                            </div>
+                            <div class="col-md-12">
+                                <p>Please check-in your baggage with adequate time.</p>
+                            </div>
                         </div>
-                        <p style="color: #9A2125;">Including hand luggage / cameras / laptops / etc.
-                            Check-in baggage should be soft-bags.
-                        </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-5 instruct_box" id="security_div">
+                        <div class="row col-md-12 inner_box" id="security_hidden" hidden>
+                            <div class="col-md-12">
+                                <h2>SECURITY</h2>
+                            </div>
+                            <div class="col-md-12">
+                                <p>Please pass through the security checkpoint at least
+                                    60 minutes prior to the departure time.
+                                </p>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
-                <div class="row bag_pics_div text-center">
-                    <img src="Assets/Images/bag_restrict.jpg" style="margin-left: 50px">
-                </div>
-                <div class="col-md-12" style="margin-top: 40px;">
-                    <h3 style="color: #9A2125;">PROHIBITED ITEMS / EQUIPMENTS</h3>
-                    <h5>The following items are not allowed. </h5>
-                </div>
-                <div class="col-md-12 bag_pics_div">
-                    <img src="Assets/Images/prohibited_items.png">
-                </div>
-            </div>
-            <div class="row" style="padding-bottom: 30px; padding-top: 50px;">
-                <div class="col-md-12 text-center">
-                    <button id="btn_backBooking" type="button" class="blue-btn">Back to my booking</button>
-                </div>
-            </div>
 
+                <div class="row container text-center" style="margin-top: 50px!important;">
+                    <div class="col-md-5 instruct_box" id="gate_div">
+                        <div class="row col-md-12 inner_box" id="gate_hidden" hidden>
+                            <div class="col-md-12">
+                                <h2>BOARDING GATE</h2>
+                            </div>
+                            <div class="col-md-12">
+                                <p>Please come to the gate 30 minutes prior to the
+                                    departure time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 instruct_box" id="depart_div">
+                        <div class="row col-md-12 inner_box" id="depart_hidden" hidden>
+                            <div class="col-md-12">
+                                <h2>DEPARTURE TIME</h2>
+                            </div>
+                            <div class="col-md-12">
+                                <p>The departure time is when the aircraft starts moving.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row" style="padding-bottom: 30px; padding-top: 50px;">
+                    <div class="col-md-12 text-center">
+                        <button id="btn_backBooking_single" type="button" class="blue-btn">Back to my booking</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
     <div class="footer-bottom">
